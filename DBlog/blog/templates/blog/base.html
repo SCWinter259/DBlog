@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <!-- We write this file so that other htmls can inherit from it-->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Django Blog</title>
-    </head>
-    <body>
-        <!-- Django template tags (look it up) -->
-        {% block content %}
-        {% endblock content %}
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/simplex/bootstrap.min.css"
+    />
+    <title>Django Blog</title>
+  </head>
+  <body>
+    <!-- Django template tags (look it up) -->
+    {% include 'blog/nav.html' %} {% block content %} {% endblock content %}
+  </body>
 </html>
