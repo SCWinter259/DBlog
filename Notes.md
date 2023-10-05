@@ -16,4 +16,8 @@ To run the server, use `py manage.py runserver`
 
 You can exit the virtualenv by just using `deactivate` (because you are in a Linux virtual env so no need to find Windows command for it).
 
-In case I forget: admin - catungthongkhi2002@gmail.com - blabla
+In case I forget: username: admin - mail: catungthongkhi2002@gmail.com - pass: blabla
+
+To have beautiful form, we use Django Crispy Form. To install, do a `pip install django-crispy-form`.
+
+We would want to use bootstrap with it, so do a `pip install crispy-bootstrap5`

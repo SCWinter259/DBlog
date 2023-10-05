@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+<!-- although this is a different app, we can still extend like this -->
+{% block content %}
+<div class="row">
+  <div class="col-11 col-md-4 mx-auto mt-5">
+    <h2>You Have Been Logged Out</h2>
+      <small>
+        <a href="{% url 'login' %}">Log in again</a>
+      </small>
+  </div>
+</div>
+{% endblock content %}
