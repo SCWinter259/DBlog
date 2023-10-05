@@ -21,3 +21,7 @@ In case I forget: username: admin - mail: catungthongkhi2002@gmail.com - pass: b
 To have beautiful form, we use Django Crispy Form. To install, do a `pip install django-crispy-form`.
 
 We would want to use bootstrap with it, so do a `pip install crispy-bootstrap5`
+
+For the text editor that we use to create the blog posts, we use the extension TinyMCE. To install, do `pip install django-tinymce`.
+
+After you have created the models, you should do a `py manage.py makemigrations` to added them as tables.
