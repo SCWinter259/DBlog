@@ -1,0 +1,5 @@
+{% if object.likes.count == 1 %}
+    <p>{{ object.likes.count }} person likes this post</p>
+{% else %}
+    <p>{{ object.likes.count }} people like this post</p>
+{% endif %}

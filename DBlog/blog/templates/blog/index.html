@@ -26,7 +26,8 @@
                 {{ object.content|truncatewords_html:50|safe }}
             </div>
 
-            <a href="#">Read more</a>
+            <!-- object.id will give us the primary key we need in the url -->
+            <a href="{% url 'detail_article' object.id %}">Read more</a>
         </div>
     </div>
     {% endfor %}
@@ -38,6 +39,10 @@
                     <li class="page-item">
                         <!-- &laquo is a character representing small << -->
                         <a class="page-link" href="?page=1">&laquo; First</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ page_obj.previous_page_number}}">Previous</a>
                     </li>
                 {% endif %}
 

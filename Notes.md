@@ -22,6 +22,8 @@ To have beautiful form, we use Django Crispy Form. To install, do a `pip install
 
 We would want to use bootstrap with it, so do a `pip install crispy-bootstrap5`
 
-For the text editor that we use to create the blog posts, we use the extension TinyMCE. To install, do `pip install django-tinymce`.
+For the text editor that we use to create the blog posts, we use the extension TinyMCE. To install, do `pip install django-tinymce`. Look at installation process for next steps.
 
 After you have created the models, you should do a `py manage.py makemigrations` to added them as tables.
+
+To add icons for this app, we use Ionicons. 
