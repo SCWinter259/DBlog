@@ -7,7 +7,7 @@
     <form method="POST">
       <!-- Cross Site Request Forgery token required by Django -->
       {% csrf_token %} {{ form | crispy }}
-      <button class="btn btn-secondary" type="submit">Sign Up</button>
+      <button class="btn btn-secondary" type="submit">Sign In</button>
     </form>
     <div class="pt-3">
         <small class="text-muted">
